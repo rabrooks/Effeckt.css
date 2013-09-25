@@ -59,3 +59,14 @@ $effeckt-tooltip-transition-delay: .2s !default;
 $effeckt-tooltip-transition-duration: .3s !default;
 $effeckt-tooltip-background: black !default;
 $effeckt-tooltip-forground: white !default;
+
+// Alerts
+
+$effeckt-alert-transition-duration: $effeckt-transition-duration !default;
+$effeckt-alert-font-size: .9rem !default; 
+$effeckt-alert-border-raadius: 3px !default; 
+$effeckt-alert-default-color: #545454 !default;
+$effeckt-alert-success-color: #528753 !default; 
+$effeckt-alert-info-color: #4E93B5 !default;
+$effeckt-alert-warning-color: #BB934E !default;
+$effeckt-alert-error-color: #A64341 !default;

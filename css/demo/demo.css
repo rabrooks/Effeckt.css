@@ -460,3 +460,6 @@ ul.effeckt-tabs {
   border: 1px solid #dddddd; }
   .effeckt-tabs-container .effeckt-tab-content {
     top: 10px; }
+
+.effeckt-demo-alerts {
+  overflow: hidden; }

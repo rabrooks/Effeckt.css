@@ -1,0 +1,115 @@
+// Alerts
+@import "../_variables";
+
+.effeckt-alert {
+	color: $effeckt-alert-default-color;
+	background-color: lighten($effeckt-alert-default-color, 37%);
+	border-color: lighten($effeckt-alert-default-color, 27%);
+	border: 1px solid transparent;
+	padding: 15px;
+	margin: 15px 0 0 0;
+	max-height:100%;
+	overflow: hidden;
+	p {
+		margin: 0; // reset the global default margin for p tags
+		font-size: $effeckt-alert-font-size;
+		line-height: $effeckt-alert-font-size * 1.4; 
+		position: relative;
+		padding-right:60px;
+		max-height: 100%;
+	}
+
+} 
+
+div.alert-success {
+	color: $effeckt-alert-success-color;
+	background-color: lighten($effeckt-alert-success-color, 37%);
+	border-color: lighten($effeckt-alert-success-color, 27%);
+	border-radius: $effeckt-alert-border-raadius; 
+}
+
+div.alert-info {
+	color: $effeckt-alert-info-color;
+	background-color: lighten($effeckt-alert-info-color, 37%);
+	border-color: lighten($effeckt-alert-info-color, 27%);
+	border-radius: $effeckt-alert-border-raadius; 
+}
+
+div.alert-warning {
+	color: $effeckt-alert-warning-color;
+	background-color: lighten($effeckt-alert-warning-color, 37%);
+	border-color: lighten($effeckt-alert-warning-color, 27%); 
+	border-radius: $effeckt-alert-border-raadius; 
+}
+
+div.alert-error {
+	color: $effeckt-alert-error-color;
+	background-color: lighten($effeckt-alert-error-color, 37%);
+	border-color: lighten($effeckt-alert-error-color, 27%);
+	border-radius: $effeckt-alert-border-raadius; 
+}
+
+.effeckt-alert-hide {
+	animation: removeAlert $effeckt-alert-transition-duration * 2 ease forwards;
+	p {
+		line-height: 0; 
+		font-size: 0;
+		transition: $effeckt-alert-transition-duration ease;
+	}
+}
+
+@keyframes removeAlert {
+	
+	from {
+		max-height: 100%;
+		margin-top: 15px;
+		margin-bottom: 0;
+		padding:15px;
+		border:1px solid transparent;
+	}
+	to {
+		max-height:0;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding:0;
+		border:0 solid transparent;
+	}
+}
+
+.effeckt-alert-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	border: none;
+	font-size: $effeckt-alert-font-size * 1.5; 
+	line-height: $effeckt-alert-font-size; 
+	color: inherit;
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.slide-in-right {
+  transform: translateX(90%);
+  opacity: 0.0;
+  transition: $effeckt-alert-transition-duration ease;
+}
+
+.slide-in-left {
+  transform: translateX(-90%);
+  opacity: 0.0;
+  transition: $effeckt-alert-transition-duration ease;
+}  
+
+.slide-up {
+  transform: translateY(-100%);
+  opacity: 0.0;
+  transition: $effeckt-alert-transition-duration ease;
+}
+
+.slide-down {
+  transform: translateY(100%);
+  opacity: 0.0;
+  transition: $effeckt-alert-transition-duration ease;
+}
