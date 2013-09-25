@@ -15,30 +15,6 @@
     padding-right: 60px;
     max-height: 100%; }
 
-div.alert-success {
-  color: #528753;
-  background-color: #bed8bf;
-  border-color: #9ec49f;
-  border-radius: 3px; }
-
-div.alert-info {
-  color: #4e93b5;
-  background-color: #d3e5ed;
-  border-color: #afcfde;
-  border-radius: 3px; }
-
-div.alert-warning {
-  color: #bb934e;
-  background-color: #efe6d6;
-  border-color: #e1cfb1;
-  border-radius: 3px; }
-
-div.alert-error {
-  color: #a64341;
-  background-color: #e6bfbe;
-  border-color: #d79a99;
-  border-radius: 3px; }
-
 .effeckt-alert-hide {
   animation: removeAlert 1000ms ease forwards; }
   .effeckt-alert-hide p {

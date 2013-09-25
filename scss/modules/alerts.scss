@@ -21,34 +21,6 @@
 
 } 
 
-div.alert-success {
-	color: $effeckt-alert-success-color;
-	background-color: lighten($effeckt-alert-success-color, 37%);
-	border-color: lighten($effeckt-alert-success-color, 27%);
-	border-radius: $effeckt-alert-border-raadius; 
-}
-
-div.alert-info {
-	color: $effeckt-alert-info-color;
-	background-color: lighten($effeckt-alert-info-color, 37%);
-	border-color: lighten($effeckt-alert-info-color, 27%);
-	border-radius: $effeckt-alert-border-raadius; 
-}
-
-div.alert-warning {
-	color: $effeckt-alert-warning-color;
-	background-color: lighten($effeckt-alert-warning-color, 37%);
-	border-color: lighten($effeckt-alert-warning-color, 27%); 
-	border-radius: $effeckt-alert-border-raadius; 
-}
-
-div.alert-error {
-	color: $effeckt-alert-error-color;
-	background-color: lighten($effeckt-alert-error-color, 37%);
-	border-color: lighten($effeckt-alert-error-color, 27%);
-	border-radius: $effeckt-alert-border-raadius; 
-}
-
 .effeckt-alert-hide {
 	animation: removeAlert $effeckt-alert-transition-duration * 2 ease forwards;
 	p {
